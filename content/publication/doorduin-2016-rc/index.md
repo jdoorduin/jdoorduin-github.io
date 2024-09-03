@@ -1,0 +1,31 @@
+---
+title: The differential diagnosis for failure to wean from mechanical ventilation
+authors:
+- Jonne Doorduin
+- Johannes G van der Hoeven
+- Leo M A Heunks
+date: '2016-04-01'
+publishDate: '2024-09-03T12:52:38.372363Z'
+publication_types:
+- article-journal
+publication: '*Curr. Opin. Anaesthesiol.*'
+abstract: 'PURPOSE OF REVIEW: In this review, we discuss the causes for a failed weaning
+  trial and specific diagnostic tests that could be conducted to identify the cause
+  for weaning failure. We briefly highlight treatment strategies that may enhance
+  the chance of weaning success. RECENT FINDINGS: Impaired respiratory mechanics,
+  respiratory muscle dysfunction, cardiac dysfunction, cognitive dysfunction, and
+  metabolic disorders are recognized causes for weaning failure. In addition, iatrogenic
+  factors may be at play. Most studies have focused on respiratory muscle dysfunction
+  and cardiac dysfunction. Recent studies demonstrate that both ultrasound and electromyography
+  are valuable tools to evaluate respiratory muscle function in ventilated patients.
+  Sophisticated ultrasound techniques and biomarkers such as B-type natriuretic peptide,
+  are valuable tools to identify cardiac dysfunction as a cause for weaning failure.
+  Once a cause for weaning failure has been identified specific treatment should be
+  instituted. Concerning treatment, both strength training and endurance training
+  should be considered for patients with respiratory muscle weakness. Inotropes and
+  vasodilators should be considered in case of heart failure. SUMMARY: Understanding
+  the complex pathophysiology of weaning failure in combination with a systematic
+  diagnostic approach allows identification of the primary cause of weaning failure.
+  This will help the clinician to choose a specific treatment strategy and therefore
+  may fasten liberation from mechanical ventilation.'
+---

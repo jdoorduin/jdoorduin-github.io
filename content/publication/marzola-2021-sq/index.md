@@ -1,0 +1,40 @@
+---
+title: Deep learning segmentation of transverse musculoskeletal ultrasound images
+  for neuromuscular disease assessment
+authors:
+- Francesco Marzola
+- Nens van Alfen
+- Jonne Doorduin
+- Kristen M Meiburger
+date: '2021-08-01'
+publishDate: '2024-09-03T12:52:38.103155Z'
+publication_types:
+- article-journal
+publication: '*Comput. Biol. Med.*'
+abstract: Ultrasound imaging is a patient-friendly and robust technique for studying
+  physiological and pathological muscles. An automatic deep learning (DL) system for
+  the analysis of ultrasound images could be useful to support an expert operator,
+  allowing the study of large datasets requiring less human interaction. The purpose
+  of this study is to present a deep learning algorithm for the cross-sectional area
+  (CSA) segmentation in transverse musculoskeletal ultrasound images, providing a
+  quantitative grayscale analysis which is useful for studying muscles, and to validate
+  the results in a large dataset. The dataset included 3917 images of biceps brachii,
+  tibialis anterior and gastrocnemius medialis acquired on 1283 subjects (mean age
+  50 $±$ 21 years, 729 male). The algorithm was based on multiple deep-learning architectures,
+  and its performance was compared to a manual expert segmentation. We compared the
+  mean grayscale value inside the automatic and manual CSA using Bland-Altman plots
+  and a correlation analysis. Classification in healthy and abnormal muscles between
+  automatic and manual segmentation were compared using the grayscale value z-scores.
+  In the test set, a Precision of 0.88 $±$ 0.12 and a Recall of 0.92 $±$ 0.09 was
+  achieved. The network segmentation performance was slightly less in abnormal muscles,
+  without a loss of discrimination between healthy and abnormal muscle images. Bland-Altman
+  plots showed no clear trend in the error distribution and the two readings have
+  a 0.99 Pearson's correlation coefficient (p < 0.001, test set). The ICC(A, 1) calculated
+  between the z-score readings was 0.99. The algorithm achieves robust CSA segmentation
+  performance and gives mean grayscale level information comparable to a manual operator.
+  This could provide a helpful tool for clinicians in neuromuscular disease diagnosis
+  and follow-up. The entire dataset and code are made available for the research community.
+tags:
+- Computer aided analysis; Convolutional neural network; Image segmentation; Neurology;
+  Open source software; Ultrasonography
+---
