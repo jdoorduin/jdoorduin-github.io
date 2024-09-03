@@ -71,4 +71,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Nelson Bighetti is a asssitant - professor of respiratory failure and mechanical ventilation at the Radboud university medical center. His research interests include distributed Respiratory Failure, Mechanical Ventilation and Neurophysiology. He leads the Respiratory Failure and Mechanical Ventilation group.
+Jonne Doorduin is a assistant - professor of respiratory failure and mechanical ventilation at the Radboud university medical center. His research interests include distributed Respiratory Failure, Mechanical Ventilation and Neurophysiology. He leads the Respiratory Failure and Mechanical Ventilation group.

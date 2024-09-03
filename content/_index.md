@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Radboud Respiratory Failure and Mechanical Ventilation Research Group** is a center of excellence for espiratory Failure and Mechanical Ventilation research, teaching, and practice.
+        The **Radboud Respiratory Failure and Mechanical Ventilation Research Group** is a center of excellence for Respiratory Failure and Mechanical Ventilation research, teaching, and practice.
   
   - block: collection
     content:
