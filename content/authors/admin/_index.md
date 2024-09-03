@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Jonne Doorduin
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Jonne
+last_name: Doorduin
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Assistant Professor of Respiratory Failure and Mechanical Ventilation
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
+  - name: Radboud university medican center
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
