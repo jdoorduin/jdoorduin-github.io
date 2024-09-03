@@ -1,0 +1,46 @@
+---
+title: Repeatability and reliability of muscle relaxation properties induced by motor
+  cortical stimulation
+authors:
+- J P Molenaar
+- N C Voermans
+- L A de Jong
+- D F Stegeman
+- J Doorduin
+- B G van Engelen
+date: '2018-06-01'
+publishDate: '2024-09-03T12:52:38.272666Z'
+publication_types:
+- article-journal
+publication: '*J. Appl. Physiol.*'
+abstract: Impaired muscle relaxation is a feature of many neuromuscular disorders.
+  However, few tests are available to quantify muscle relaxation. Transcranial magnetic
+  stimulation (TMS) of the motor cortex can induce muscle relaxation by abruptly inhibiting
+  corticospinal drive. The aim of our study was to investigate whether repeatability
+  and reliability of TMS-induced relaxation are greater than voluntary relaxation.
+  Furthermore, effects of sex, cooling, and fatigue on muscle relaxation properties
+  were studied. Muscle relaxation of deep finger flexors was assessed in 25 healthy
+  subjects (14 men and 11 women, age 39.1 $±$ 12.7 and 45.3 $±$ 8.7 yr, respectively)
+  with handgrip dynamometry. All outcome measures showed greater repeatability and
+  reliability in TMS-induced relaxation compared with voluntary relaxation. The within-subject
+  coefficient of variability of normalized peak relaxation rate was lower in TMS-induced
+  relaxation than in voluntary relaxation (3.0% vs. 19.7% in men and 6.1% vs. 14.3%
+  in women). The repeatability coefficient was lower (1.3 vs. 6.1 s-1 in men and 2.3
+  vs. 3.1 s-1 in women) and the intraclass correlation coefficient was higher (0.95
+  vs. 0.53 in men and 0.78 vs. 0.69 in women) for TMS-induced relaxation compared
+  with voluntary relaxation. TMS enabled demonstration of slowing effects of sex,
+  muscle cooling, and muscle fatigue on relaxation properties that voluntary relaxation
+  could not. In conclusion, repeatability and reliability of TMS-induced muscle relaxation
+  were greater compared with voluntary muscle relaxation. TMS-induced muscle relaxation
+  has the potential to be used in clinical practice for diagnostic purposes and therapy
+  effect monitoring in patients with impaired muscle relaxation. NEW & NOTEWORTHY
+  Transcranial magnetic stimulation (TMS)-induced muscle relaxation demonstrates greater
+  repeatability and reliability compared with voluntary relaxation, represented by
+  the ability to demonstrate typical effects of sex, cooling, and fatigue on muscle
+  relaxation properties that were not seen in voluntary relaxation. In clinical practice,
+  TMS-induced muscle relaxation could be used for diagnostic purposes and therapy
+  effect monitoring. Furthermore, fewer subjects will be needed for future studies
+  when using TMS to demonstrate differences in muscle relaxation properties.
+tags:
+- muscle cooling; muscle fatigue; muscle relaxation; transcranial magnetic stimulation
+---
