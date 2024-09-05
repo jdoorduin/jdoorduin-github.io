@@ -14,11 +14,11 @@ role: Assistant Professor of Respiratory Failure and Mechanical Ventilation
 
 # Organizations/Affiliations
 organizations:
-  - name: Radboud university medican center
+  - name: Radboud university medical center
     url: 'www.radboudumc.nl'
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed Respiratory Failure, Mechanical Ventilation and Neurophysiology.
+bio: My research interests include Respiratory Failure, Mechanical Ventilation and Neurophysiology.
 
 interests:
   - Respiratory Failure
@@ -63,7 +63,7 @@ social:
 email: ''
 
 # Highlight the author in author lists? (true/false)
-highlight_name: false
+highlight_name: true
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -71,4 +71,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Jonne Doorduin is a assistant - professor of respiratory failure and mechanical ventilation at the Radboud university medical center. His research interests include distributed Respiratory Failure, Mechanical Ventilation and Neurophysiology. He leads the Respiratory Failure and Mechanical Ventilation group.
+Jonne Doorduin is a assistant professor of respiratory failure and mechanical ventilation at the Radboud university medical center. His research interests include  Respiratory Failure, Mechanical Ventilation and Neurophysiology. He leads the Respiratory Failure and Mechanical Ventilation group.
