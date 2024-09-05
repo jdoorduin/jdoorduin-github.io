@@ -4,10 +4,10 @@ title: Esther de Leijer
 
 # Full Name (for SEO)
 first_name: Esther
-last_name: de Lijer
+last_name: de Leijer
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
 role: PhD
