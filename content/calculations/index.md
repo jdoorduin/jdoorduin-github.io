@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title:Respiratory calculations
+title: Respiratory calculations
 date: 2024-09-05
 type: draft
 
@@ -8,3 +8,4 @@ type: draft
 
 {{< youtube egJbUPhUK8Y >}}
 
+---
