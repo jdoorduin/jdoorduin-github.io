@@ -102,7 +102,7 @@ sections:
           - publication
         publication_type: 'article-journal'
     design:
-      view:  
+      view: citation
       columns: '1'
 
   - block: markdown
