@@ -30,7 +30,7 @@ sections:
         tag: ''
       offset: 0
       order: desc
-      page_type: post
+      page_type: news
     design:
       view: card
       columns: '1'
@@ -102,7 +102,7 @@ sections:
           - publication
         publication_type: 'article-journal'
     design:
-      view: citation
+      view:  
       columns: '1'
 
   - block: markdown
