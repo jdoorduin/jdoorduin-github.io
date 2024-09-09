@@ -16,6 +16,7 @@ sections:
         The **Radboud Respiratory Failure and Mechanical Ventilation Research Group** is a center of excellence for Respiratory Failure and Mechanical Ventilation research, teaching, and practice.
   
   - block: collection
+    id: News
     content:
       title: Latest News
       subtitle:
@@ -34,8 +35,48 @@ sections:
       view: card
       columns: '1'
 
+sections:
+  # A section to display blog posts
   - block: collection
-    id: test
+    id: Blog
+    content:
+      title: Blog
+      subtitle: 
+      text: 
+      # Display content from the `content/post/` folder
+      filters:
+        folders:
+          - blog
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+      # Choose your content listing view - here we use the `showcase` view
+      view: showcase
+      # For the Showcase view, do you want to flip alternate rows?
+      flip_alt_rows: true
+
+  - block: people
+    id: Team
+    content:
+      title: Meet the Team
+      # Choose which groups/teams of users to display.
+      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
+      user_groups:
+          - Principal Investigators
+          - Researchers
+          - Graduate Students
+          - Administration
+          - Visitors
+          - Alumni
+      sort_by: Params.last_name
+      sort_ascending: true
+    design:
+      show_interests: true
+      show_role: true
+      show_social: true
+
+  - block: collection
+    id: Publications
     content:
       title: Latest Publications
       text: ""
@@ -53,7 +94,7 @@ sections:
       title:
       subtitle:
       text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        {{% cta cta_link="./contact/" cta_text="Contact us →" %}}
     design:
       columns: '1'
 ---

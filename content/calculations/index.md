@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Respiratory calculations
+title: RespiCalc
 date: 2024-09-05
 type: draft
 ---

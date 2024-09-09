@@ -5,23 +5,21 @@
 
 main:
   - name: News
-    url: post
+    url: /#News
     weight: 10
-  - name: Events
-    url: event
+  - name: Blog
+    url: /#Blog
     weight: 20
-  - name: People
-    url: people
+  - name: Team
+    url: /#Team
     weight: 30
-  - name: Calculations
-    url: calculations
+  - name: Publication
+    url: /#Publications
     weight: 40
-  - name: Publications
-    url: publication
+  - name: RespiCalc
+    url: calculations
     weight: 50
   - name: Contact
     url: contact
     weight: 60
-  - name: Test
-    url: /#test
-    weight: 70
+
