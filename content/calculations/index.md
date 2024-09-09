@@ -5,6 +5,7 @@ date: 2024-09-05
 type: draft
 ---
 
+<script src = "/js/wc.js"></script>
 {{<myshortcode>}}
 
 {{< youtube egJbUPhUK8Y >}}
