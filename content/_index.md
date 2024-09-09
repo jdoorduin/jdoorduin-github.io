@@ -95,8 +95,7 @@ sections:
     id: publications_1
     content:
       title: Latest Publications
-      text: |
-        {{% cta cta_link="./publications/" cta_text="See all publications→" %}}
+      text: 
       count: 5
       filters:
         folders:
@@ -105,7 +104,7 @@ sections:
 
     design:
       view: citation
-      columns: '2'
+      columns: '1'
 
   - block: markdown
     content:
@@ -114,7 +113,6 @@ sections:
       text: <a class="twitter-timeline" href="https://twitter.com/DrJonneDoorduin?ref_src=twsrc%5Etfw">Tweets by DrJonneDoorduin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     design:
       columns: '1'
----
 
   - block: markdown
     content:
