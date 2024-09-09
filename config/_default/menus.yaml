@@ -13,13 +13,16 @@ main:
   - name: Team
     url: /#Team
     weight: 30
+  - name: Projects
+    url: /#Projects
+    weight: 40
   - name: Publication
     url: /#Publications
-    weight: 40
+    weight: 50
   - name: RespiCalc
     url: calculations
-    weight: 50
+    weight: 60
   - name: Contact
     url: contact
-    weight: 60
+    weight: 70
 

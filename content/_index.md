@@ -35,8 +35,6 @@ sections:
       view: card
       columns: '1'
 
-sections:
-  # A section to display blog posts
   - block: collection
     id: Blog
     content:
@@ -47,6 +45,24 @@ sections:
       filters:
         folders:
           - blog
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+      # Choose your content listing view - here we use the `showcase` view
+      view: showcase
+      # For the Showcase view, do you want to flip alternate rows?
+      flip_alt_rows: true
+
+  - block: collection
+    id: Projects
+    content:
+      title: Projects
+      subtitle: 
+      text: 
+      # Display content from the `content/post/` folder
+      filters:
+        folders:
+          - projects
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
