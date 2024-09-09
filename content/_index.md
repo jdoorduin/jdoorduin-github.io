@@ -110,7 +110,7 @@ sections:
     content:
       title:
       subtitle:
-      text: {{<tweets>}}
+      text: 
     design:
       columns: '1'
 
