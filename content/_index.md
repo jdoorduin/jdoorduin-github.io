@@ -101,7 +101,7 @@ sections:
           - publication
         publication_type: 'article-journal'
         text: |
-        {{% cta cta_link="./publications/" cta_text="See all publications→" %}}
+          {{% cta cta_link="./publications/" cta_text="See all publications→" %}}
     design:
       view: citation
       columns: '1'
