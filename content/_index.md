@@ -110,7 +110,8 @@ sections:
     content:
       title:
       subtitle:
-      text: {{<tweets>}}
+      text: | 
+        {{<tweets>}}
     design:
       columns: '1'
 
@@ -123,3 +124,5 @@ sections:
     design:
       columns: '1'
 ---
+
+{{<tweets>}}
