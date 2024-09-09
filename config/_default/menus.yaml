@@ -5,19 +5,19 @@
 
 main:
   - name: News
-    url: /#News
+    url: /#news_1
     weight: 10
   - name: Blog
-    url: /#Blog
+    url: /#blog_1
     weight: 20
   - name: Team
-    url: /#Team
+    url: /#team_1
     weight: 30
   - name: Projects
-    url: /#Projects
+    url: /#projects_1
     weight: 40
   - name: Publication
-    url: /#Publications
+    url: /#publications_1
     weight: 50
   - name: RespiCalc
     url: calculations

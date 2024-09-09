@@ -16,7 +16,7 @@ sections:
         The **Radboud Respiratory Failure and Mechanical Ventilation Research Group** is a center of excellence for Respiratory Failure and Mechanical Ventilation research, teaching, and practice.
   
   - block: collection
-    id: News
+    id: news_1
     content:
       title: Latest News
       subtitle:
@@ -36,7 +36,7 @@ sections:
       columns: '1'
 
   - block: collection
-    id: Blog
+    id: blog_1
     content:
       title: Blog
       subtitle: 
@@ -54,7 +54,7 @@ sections:
       flip_alt_rows: true
 
   - block: collection
-    id: Projects
+    id: projects_1
     content:
       title: Projects
       subtitle: 
@@ -72,7 +72,7 @@ sections:
       flip_alt_rows: true
 
   - block: people
-    id: Team
+    id: team_1
     content:
       title: Meet the Team
       # Choose which groups/teams of users to display.
@@ -92,7 +92,7 @@ sections:
       show_social: true
 
   - block: collection
-    id: Publications
+    id: publications_1
     content:
       title: Latest Publications
       text: ""
