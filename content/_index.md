@@ -95,7 +95,8 @@ sections:
     id: publications_1
     content:
       title: Latest Publications
-      text: ""
+      text: |
+        {{% cta cta_link="./publications/" cta_text="See all publications→" %}}
       count: 5
       filters:
         folders:

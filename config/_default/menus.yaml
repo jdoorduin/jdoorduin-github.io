@@ -13,7 +13,7 @@ main:
   - name: Projects
     url: /#projects_1
     weight: 30
-      - name: Team
+  - name: Team
     url: /#team_1
     weight: 40
   - name: Publications
