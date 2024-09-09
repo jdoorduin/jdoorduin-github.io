@@ -5,6 +5,6 @@ date: 2024-09-05
 type: draft
 ---
 
-{{< twitter user="DrJonneDoorduin" id="981453765395058689" >}}
-
 {{< youtube egJbUPhUK8Y >}}
+
+<a class="twitter-timeline" href="https://twitter.com/DrJonneDoorduin?ref_src=twsrc%5Etfw">Tweets by DrJonneDoorduin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -35,6 +35,7 @@ sections:
       columns: '1'
 
   - block: collection
+    id: test
     content:
       title: Latest Publications
       text: ""
