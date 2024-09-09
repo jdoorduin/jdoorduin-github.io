@@ -111,6 +111,15 @@ sections:
     content:
       title:
       subtitle:
+      text: <a class="twitter-timeline" href="https://twitter.com/DrJonneDoorduin?ref_src=twsrc%5Etfw">Tweets by DrJonneDoorduin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    design:
+      columns: '1'
+---
+
+  - block: markdown
+    content:
+      title:
+      subtitle:
       text: |
         {{% cta cta_link="./contact/" cta_text="Contact us →" %}}
     design:
