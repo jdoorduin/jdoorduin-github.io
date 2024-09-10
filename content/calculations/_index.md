@@ -1,8 +1,3 @@
----
-title:
-type: landing
----
-
 {{<myshortcode>}}
 
 <br><br>
