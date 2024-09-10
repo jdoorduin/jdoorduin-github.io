@@ -1,3 +1,9 @@
+---
+title:
+summary: 
+date: 
+---
+
 {{<myshortcode>}}
 
 <br><br>
