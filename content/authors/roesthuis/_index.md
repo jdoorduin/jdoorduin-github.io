@@ -10,7 +10,7 @@ last_name: Roesthuis
 superuser: false
 
 # Role/position
-role: Post doc
+role: Senior researcher
 
 # Organizations/Affiliations
 organizations:
