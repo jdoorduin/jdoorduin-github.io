@@ -40,8 +40,8 @@ sections:
       title:
       subtitle:
       text: |
-        %% September 2024 %% - Leo Heunks receives life-time achievement award from the European Respiratory Society
-        %% August 2024 %% - We are happy to announce Jonne Doorduin is appointed Assistant Professor in the Radbodu talent Track
+        **September 2024** - Leo Heunks receives life-time achievement award from the European Respiratory Society <br>
+        **August 2024** - We are happy to announce Jonne Doorduin is appointed Assistant Professor in the Radbodu talent Track
     design:
       columns: '1'
 
