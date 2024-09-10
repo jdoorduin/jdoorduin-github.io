@@ -95,7 +95,7 @@ sections:
     id: publications_1
     content:
       title: Latest Publications
-      text: 
+      text: Test Test
       count: 5
       filters:
         folders:
