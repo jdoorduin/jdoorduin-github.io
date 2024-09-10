@@ -97,15 +97,6 @@ sections:
     content:
       title:
       subtitle:
-      text: | 
-        {{<tweets>}}
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
       text: |
         {{% cta cta_link="./contact/" cta_text="Contact us →" %}}
     design:

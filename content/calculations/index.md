@@ -8,3 +8,7 @@ type: landing
 <br><br>
 
 {{< youtube egJbUPhUK8Y >}}
+
+<br><br>
+
+{{<tweets>}}
