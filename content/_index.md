@@ -4,6 +4,11 @@ title:
 date: 2022-10-24
 type: landing
 
+design:
+  spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+    padding: ['10px', '0', '10px', '0']
+
 sections:
   - block: hero
     content:
