@@ -15,29 +15,10 @@ sections:
         
         The **Radboud Respiratory Failure and Mechanical Ventilation Research Group** is a center of excellence for Respiratory Failure and Mechanical Ventilation research, teaching, and practice.
   
-  - block: collection
+  - block: markdown
     id: news_1
     content:
       title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: news
-    design:
-      view: list
-      columns: '1'
-
-  - block: markdown
-    content:
-      title:
       subtitle:
       text: |
         **September 2024** - Leo Heunks receives life-time achievement award from the European Respiratory Society <br>
