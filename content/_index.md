@@ -35,6 +35,9 @@ sections:
       filters:
         folders:
           - blog
+    design:
+      columns: '1'
+      view: compact
 
 
   - block: collection
@@ -43,17 +46,13 @@ sections:
       title: Projects
       subtitle: 
       text: 
-      # Display content from the `content/post/` folder
       filters:
         folders:
           - projects
     design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
-      # Choose your content listing view - here we use the `showcase` view
-      view: showcase
-      # For the Showcase view, do you want to flip alternate rows?
-      flip_alt_rows: false
+      view: compact
+
 
   - block: people
     id: team_1
