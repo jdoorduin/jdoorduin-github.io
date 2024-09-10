@@ -29,7 +29,7 @@ sections:
   - block: collection
     id: blog_1
     content:
-      title: 
+      title: Blog
       subtitle: 
       text: 
       filters:
