@@ -4,11 +4,6 @@ title:
 date: 2022-10-24
 type: landing
 
-design:
-  spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-    padding: ['10px', '0', '10px', '0']
-
 sections:
   - block: hero
     content:
@@ -43,6 +38,7 @@ sections:
     design:
       columns: '1'
       view: compact
+      padding: ['10px', '0', '10px', '0']
 
 
   - block: collection
@@ -57,6 +53,7 @@ sections:
     design:
       columns: '1'
       view: compact
+      padding: ['10px', '0', '10px', '0']
 
 
   - block: people
@@ -78,6 +75,7 @@ sections:
       show_interests: true
       show_role: true
       show_social: true
+      padding: ['10px', '0', '10px', '0']
 
   - block: collection
     id: publications_1
