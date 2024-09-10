@@ -38,8 +38,6 @@ sections:
     design:
       columns: '1'
       view: compact
-      padding: ['10px', '0', '10px', '0']
-
 
   - block: collection
     id: projects_1
@@ -53,8 +51,6 @@ sections:
     design:
       columns: '1'
       view: compact
-      padding: ['10px', '0', '10px', '0']
-
 
   - block: people
     id: team_1
@@ -75,7 +71,6 @@ sections:
       show_interests: true
       show_role: true
       show_social: true
-      padding: ['10px', '0', '10px', '0']
 
   - block: collection
     id: publications_1
