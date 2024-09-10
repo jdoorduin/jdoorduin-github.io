@@ -32,7 +32,7 @@ sections:
       order: desc
       page_type: news
     design:
-      view: card
+      view: list
       columns: '1'
 
   - block: collection
