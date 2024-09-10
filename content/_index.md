@@ -86,7 +86,10 @@ sections:
     id: publications_1
     content:
       title: Latest Publications
-      text: Test Test
+      text: |
+        {{% callout note %}}
+        Quickly discover relevant content by filtering publications({{< relref "/publications/" >}}).
+        {{% /callout %}}
       count: 5
       filters:
         folders:
