@@ -1,8 +1,6 @@
 ---
-# Leave the homepage title empty to use the site title
-title: RespiCalc
-date: 2024-09-05
-type: draft
+title:
+type: landing
 ---
 
 {{<myshortcode>}}
