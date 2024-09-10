@@ -53,7 +53,7 @@ sections:
       # Choose your content listing view - here we use the `showcase` view
       view: showcase
       # For the Showcase view, do you want to flip alternate rows?
-      flip_alt_rows: true
+      flip_alt_rows: false
 
   - block: people
     id: team_1
