@@ -6,6 +6,9 @@ title: Jonne Doorduin
 first_name: Jonne
 last_name: Doorduin
 
+authors:
+- Jonne Doorduim
+
 # Is this the primary user of the site?
 superuser: true
 
