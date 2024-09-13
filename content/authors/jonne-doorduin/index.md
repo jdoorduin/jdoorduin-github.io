@@ -71,5 +71,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Jonne Doorduin is an assistant professor of respiratory failure and mechanical ventilation at the Radboud university medical center. His research interests include  
-Respiratory Failure, Mechanical Ventilation and Neurophysiology. He leads the Respiratory Failure and Mechanical Ventilation group.
+Jonne Doorduin is an assistant professor of respiratory failure and mechanical ventilation at the Radboud university medical center. His research interests include Respiratory Failure, Mechanical Ventilation and Neurophysiology. He leads the Respiratory Failure and Mechanical Ventilation group.
