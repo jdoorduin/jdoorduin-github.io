@@ -1,4 +1,19 @@
+{{ $show_navbar := ((site.Params.header.navbar.enable | default true) | and (ne .Params.header.navbar.enable false)) | or .Params.header.navbar.enable }}
+{{ if $show_navbar }}
 
+{{ $current_page := . }}
+{{ $highlight_active_link := site.Params.header.navbar.highlight_active_link | default true }}
+{{ $show_current_language := site.Params.header.navbar.show_language | default false }}
+
+{{/* Get site logo. */}}
+{{ $show_logo := site.Params.header.navbar.show_logo | default true }}
+{{ $has_logo := fileExists "assets/media/logo.png" | or (fileExists "assets/media/logo.svg") }}
+{{ $logo := "" }}
+{{ if $has_logo }}
+  {{ $logo = (partial "blox-core/functions/get_logo" (dict "constraint" "max_height" "size" 70)) }}
+{{ end }}
+
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -198,3 +213,5 @@
 
     </div><!-- /.container -->
   </nav>
+</header>
+{{end}}{{/* End show navbar. */}}
