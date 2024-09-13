@@ -2,7 +2,7 @@
 title: Three bedside techniques to quantify dynamic pulmonary hyperinflation in mechanically
   ventilated patients with chronic obstructive pulmonary disease
 authors:
-- L H Roesthuis
+- Lisanne Roesthuis
 - J G van der Hoeven
 - C Guérin
 - Jonne Doorduin

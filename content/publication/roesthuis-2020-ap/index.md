@@ -2,7 +2,7 @@
 title: Recruitment pattern of the diaphragm and extradiaphragmatic inspiratory muscles
   in response to different levels of pressure support
 authors:
-- L H Roesthuis
+- Lisanne Roesthuis
 - J G van der Hoeven
 - H W H van Hees
 - W-J M Schellekens

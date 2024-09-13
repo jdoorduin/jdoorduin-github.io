@@ -21,7 +21,7 @@ authors:
 - D Poddighe
 - M Ramsay
 - A Rodrigues
-- L H Roesthuis
+- Lisanne Roesthuis
 - A Rossel
 - A Torres
 - M L Duiverman
