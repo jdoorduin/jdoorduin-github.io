@@ -20,8 +20,16 @@ main:
     url: /#publications_1
     weight: 50
   - name: RespiCalc
-    url: calculations
+    identifier: respicalc
     weight: 60
+  - name: Respiratory mechanics
+    parent: respicalc
+    url: calculations/mechanics/
+    weight: 10
+  - name: Gas exchange
+    parent: respicalc
+    url: calculations/gas/
+    weight: 20
   - name: Contact
     url: contact
     weight: 70
