@@ -7,7 +7,7 @@ first_name: Leo
 last_name: Heunks
 
 # Is this the primary user of the site?
-superuser: false
+superuser: true
 
 # Role/position
 role: Full Professor of Intensive Care Medicine

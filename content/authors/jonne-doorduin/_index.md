@@ -7,7 +7,7 @@ first_name: Jonne
 last_name: Doorduin
 
 # Is this the primary user of the site?
-superuser: false
+superuser: true
 
 # Role/position
 role: Assistant Professor of Respiratory Failure and Mechanical Ventilation
