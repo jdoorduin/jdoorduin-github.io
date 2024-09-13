@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Leo Heunks
+title: Leo M Heunks
 
 # Full Name (for SEO)
-first_name: Leo
+first_name: Leo M
 last_name: Heunks
 
 # Is this the primary user of the site?
