@@ -4,7 +4,7 @@ title: Partial neuromuscular blockade during partial ventilatory support in seda
 authors:
 - Jonne Doorduin
 - Joeke L Nollet
-- Lisanne H Roesthuis
+- Lisanne Roesthuis
 - Hieronymus W H van Hees
 - Laurent J Brochard
 - Christer A Sinderby

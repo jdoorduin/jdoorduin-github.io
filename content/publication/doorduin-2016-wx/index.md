@@ -5,7 +5,7 @@ authors:
 - Jonne Doorduin
 - Joeke L Nollet
 - Manon P A J Vugts
-- Lisanne H Roesthuis
+- Lisanne Roesthuis
 - Ferdi Akankan
 - Johannes G van der Hoeven
 - Hieronymus W H van Hees

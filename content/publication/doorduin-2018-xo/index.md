@@ -3,7 +3,7 @@ title: Respiratory muscle effort during expiration in successful and failed wean
   from mechanical ventilation
 authors:
 - Jonne Doorduin
-- Lisanne H Roesthuis
+- Lisanne Roesthuis
 - Diana Jansen
 - Johannes G van der Hoeven
 - Hieronymus W H van Hees

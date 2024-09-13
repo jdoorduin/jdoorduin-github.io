@@ -4,7 +4,7 @@ authors:
 - Willem-Jan M Schellekens
 - Hieronymus W H van Hees
 - Jonne Doorduin
-- Lisanne H Roesthuis
+- Lisanne Roesthuis
 - Gert Jan Scheffer
 - Johannes G van der Hoeven
 - Leo Heunks

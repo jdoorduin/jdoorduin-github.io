@@ -5,7 +5,7 @@ authors:
 - Eline Oppersma
 - Jonne Doorduin
 - Petra J Gooskens
-- Lisanne H Roesthuis
+- Lisanne Roesthuis
 - Erik H F M van der Heijden
 - Johannes G van der Hoeven
 - Peter H Veltink

@@ -4,7 +4,7 @@ title: 'Patient-ventilator interaction during noninvasive ventilation in subject
 authors:
 - Eline Oppersma
 - Jonne Doorduin
-- Lisanne H Roesthuis
+- Lisanne Roesthuis
 - Johannes G van der Hoeven
 - Peter H Veltink
 - Leo Heunks
