@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Leo Keunks
+title: Leo Heunks
 
 # Full Name (for SEO)
 first_name: Leo
@@ -24,7 +24,6 @@ interests:
   - Respiratory Failure
   - Mechanical Ventilation
   - Weaning
-
 
 education:
   courses:
@@ -68,4 +67,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Jonne Doorduin is a full professor of intensive care medicine at the Radboud university medical center. His research interests include ....
+Leu Heunks is a full professor of intensive care medicine at the Radboud university medical center. His research interests include ....
