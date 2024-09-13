@@ -12,7 +12,7 @@ authors:
 - J Elshof
 - L Estrada-Petrocelli
 - J Graßhoff
-- L M A Heunks
+- Leo Heunks
 - A A Koopman
 - D Langer
 - C M Moore
