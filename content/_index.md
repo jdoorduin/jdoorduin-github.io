@@ -10,9 +10,7 @@ sections:
       title: |
       image:
         filename: welcome.jpg
-      text: |
-        <br>
-        
+      text: |   
         **The Radboud Mechanical Ventilation Research Group** <br><br>
         With our research we aim to improve outcome in critically ill mechanically ventilated patients through development and utilization of novel technologies and strategies.
           
