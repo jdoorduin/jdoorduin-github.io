@@ -7,7 +7,7 @@ authors:
 - Lisanne H Roesthuis
 - Johannes G van der Hoeven
 - Peter H Veltink
-- Leo Ma Heunks
+- Leo Heunks
 date: '2020-09-01'
 publishDate: '2024-09-03T12:52:38.122997Z'
 publication_types:

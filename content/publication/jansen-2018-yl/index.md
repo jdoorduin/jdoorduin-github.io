@@ -11,7 +11,7 @@ authors:
 - Armand Girbes
 - Jonne Doorduin
 - Christer S Sinderby
-- Leo M A Heunks
+- Leo Heunks
 date: '2018-09-01'
 publishDate: '2024-09-03T12:52:38.237264Z'
 publication_types:

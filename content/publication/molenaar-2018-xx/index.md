@@ -6,7 +6,7 @@ authors:
 - N C Voermans
 - L A de Jong
 - D F Stegeman
-- J Doorduin
+- Jonne Doorduin
 - B G van Engelen
 date: '2018-06-01'
 publishDate: '2024-09-03T12:52:38.272666Z'

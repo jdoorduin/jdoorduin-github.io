@@ -6,7 +6,7 @@ authors:
 - Christer A Sinderby
 - Jennifer Beck
 - Johannes G van der Hoeven
-- Leo M A Heunks
+- Leo Heunks
 date: '2015-07-01'
 publishDate: '2024-09-03T12:52:38.387045Z'
 publication_types:

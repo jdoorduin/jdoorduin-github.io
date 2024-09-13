@@ -2,7 +2,7 @@
 title: The effect of metabolic alkalosis on the ventilatory response in healthy subjects
 authors:
 - E Oppersma
-- J Doorduin
+- Jonne Doorduin
 - J G van der Hoeven
 - P H Veltink
 - H W H van Hees

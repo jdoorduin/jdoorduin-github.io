@@ -9,7 +9,7 @@ authors:
 - Gernot Marx
 - Andreas Goetzenich
 - Sebastian Fritsch
-- Leo M A Heunks
+- Leo Heunks
 - Christian S Bruells
 date: '2017-11-01'
 publishDate: '2024-09-03T12:52:38.314128Z'

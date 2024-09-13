@@ -6,7 +6,7 @@ authors:
 - J G van der Hoeven
 - H W H van Hees
 - W-J M Schellekens
-- J Doorduin
+- Jonne Doorduin
 - L M A Heunks
 date: '2020-05-01'
 publishDate: '2024-09-03T12:52:38.150791Z'

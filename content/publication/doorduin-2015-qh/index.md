@@ -7,7 +7,7 @@ authors:
 - Hieronymus W H van Hees
 - Johannes G van der Hoeven
 - Peter Pickkers
-- Leo M A Heunks
+- Leo Heunks
 date: '2015-10-01'
 publishDate: '2024-09-03T12:52:38.379446Z'
 publication_types:

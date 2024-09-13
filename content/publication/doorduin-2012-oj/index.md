@@ -7,7 +7,7 @@ authors:
 - Dick F Stegeman
 - Hieronymus W H van Hees
 - Johannes G van der Hoeven
-- Leo M A Heunks
+- Leo Heunks
 date: '2012-01-01'
 publishDate: '2024-09-03T12:52:38.430233Z'
 publication_types:

@@ -1,7 +1,7 @@
 ---
 title: Monitoring and preventing diaphragm injury
 authors:
-- Leo M A Heunks
+- Leo Heunks
 - Jonne Doorduin
 - Johannes G van der Hoeven
 date: '2015-02-01'

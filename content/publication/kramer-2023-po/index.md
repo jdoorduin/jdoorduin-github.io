@@ -11,7 +11,7 @@ authors:
 - J L M van Doorn
 - E J Kamsteeg
 - B Eymard
-- J Doorduin
+- Jonne Doorduin
 - N C Voermans
 date: '2023-01-01'
 publishDate: '2024-09-03T12:52:37.984004Z'

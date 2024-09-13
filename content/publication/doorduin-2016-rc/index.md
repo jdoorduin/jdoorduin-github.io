@@ -3,7 +3,7 @@ title: The differential diagnosis for failure to wean from mechanical ventilatio
 authors:
 - Jonne Doorduin
 - Johannes G van der Hoeven
-- Leo M A Heunks
+- Leo Heunks
 date: '2016-04-01'
 publishDate: '2024-09-03T12:52:38.372363Z'
 publication_types:

@@ -7,7 +7,7 @@ authors:
 - Diana Jansen
 - Johannes G van der Hoeven
 - Hieronymus W H van Hees
-- Leo M A Heunks
+- Leo Heunks
 date: '2018-09-01'
 publishDate: '2024-09-03T12:52:38.248373Z'
 publication_types:

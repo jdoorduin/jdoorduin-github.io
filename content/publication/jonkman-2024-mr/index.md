@@ -7,7 +7,7 @@ authors:
 - W Baccinelli
 - N M Carbon
 - R F D'Cruz
-- J Doorduin
+- Jonne Doorduin
 - J L M van Doorn
 - J Elshof
 - L Estrada-Petrocelli

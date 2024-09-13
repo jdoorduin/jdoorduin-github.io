@@ -5,7 +5,7 @@ authors:
 - T B M Tilanus
 - J T Groothuis
 - J M C Ten Broek-Pastoor
-- J Doorduin
+- Jonne Doorduin
 - B G M van Engelen
 - M J Kampelmacher
 - J Raaphorst

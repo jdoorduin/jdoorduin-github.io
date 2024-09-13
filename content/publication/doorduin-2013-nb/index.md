@@ -4,7 +4,7 @@ authors:
 - Jonne Doorduin
 - Hieronymus W H van Hees
 - Johannes G van der Hoeven
-- Leo M A Heunks
+- Leo Heunks
 date: '2013-01-01'
 publishDate: '2024-09-03T12:52:38.417600Z'
 publication_types:

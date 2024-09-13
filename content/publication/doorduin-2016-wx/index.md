@@ -9,7 +9,7 @@ authors:
 - Ferdi Akankan
 - Johannes G van der Hoeven
 - Hieronymus W H van Hees
-- Leo M A Heunks
+- Leo Heunks
 date: '2016-05-01'
 publishDate: '2024-09-03T12:52:38.357209Z'
 publication_types:

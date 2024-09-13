@@ -8,7 +8,7 @@ authors:
 - T B Feuth
 - Y F Heijdra
 - J P L Slenders
-- J Doorduin
+- Jonne Doorduin
 - B G Van Engelen
 - M J Kampelmacher
 - J Raaphorst
