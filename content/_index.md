@@ -22,7 +22,7 @@ sections:
       text: |
         **September 2024** - [Leo Heunks]({{< relref "/authors/leo-heunks" >}}) receives life-time achievement award from the European Respiratory Society 🙏<br>
         **August 2024** - We are happy to announce [Jonne Doorduin]({{< relref "/authors/jonne-doorduin" >}}) is appointed Assistant Professor in the Radboud talent Track 😃 <br>
-        **August 2024** - [Esther de Leijer]({{< relref "/authors/esther-de-leijer" >}}) joined our team as PhD student to perform the  [WEANLESS study] 💪({{< relref "/projects/WEANLESS" >}}).
+        **August 2024** - [Esther de Leijer]({{< relref "/authors/esther-de-leijer" >}}) joined our team as PhD student to perform the [WEANLESS]({{< relref "/projects/WEANLESS" >}}) study 💪.
     design:
       columns: '1'
 
