@@ -1,217 +1,199 @@
-{{ $show_navbar := ((site.Params.header.navbar.enable | default true) | and (ne .Params.header.navbar.enable false)) | or .Params.header.navbar.enable }}
-{{ if $show_navbar }}
+<header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      <!-- Brand -->
+      <a class="navbar-brand" href="{{ site.Home.RelPermalink }}" title="{{ site.Title }}">
+        {{- $logo_filename := site.Params.header.navbar.logo.filename -}}
+        {{ with $logo_filename }}
+          {{- $logo:= resources.Get (path.Join "media" $logo_filename) -}}
+          {{ with $logo }}
+            {{ $logoExt := path.Ext . }}
+            {{ if eq $logoExt `.svg` }}
+              {{- $logo.Content | safeHTML -}}
+            {{else}}
+              {{ $logo_img := ($logo.Process "Resize x36 webp") }}
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class=""
+                width="{{ $logo_img.Width }}"
+                height="{{ $logo_img.Height }}"
+                src="{{ $logo_img.RelPermalink }}"
+                alt="{{ site.Title }}" />
+            {{end}}
+          {{ else }}
+            {{ warnf "Logo `%s` not found in `assets/media/` folder" $logo_filename }}
+          {{end}}
+        {{ end }}
+        {{ with site.Params.header.navbar.logo.text }}{{.}}{{end}}
+      </a>
+    </div>
+    <!-- Mobile menu -->
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    <!-- /Mobile menu -->
 
-{{ $current_page := . }}
-{{ $highlight_active_link := .Params.header.navbar.highlight_active_link | default true }}
-{{ $show_current_language := .Params.header.navbar.show_language | default false }}
-
-{{/* Get site logo. */}}
-{{ $show_logo := .Params.header.navbar.show_logo | default true }}
-{{ $has_logo := fileExists "assets/media/logo.png" | or (fileExists "assets/media/logo.svg") }}
-{{ $logo := "" }}
-{{ if $has_logo }}
-  {{ $logo = (partial "blox-core/functions/get_logo" (dict "constraint" "max_height" "size" 70)) }}
-{{ end }}
-
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container-xl">
-
-      {{if $show_logo}}
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
-          {{- if $has_logo -}}
-            <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
-            {{with site.Params.header.image.width}}width="{{.}}"{{end}}
-            {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
+    <!-- Main menu -->
+    {{ $align_menu := site.Params.header.navbar.align | default "center" }}
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      {{ if in (slice "l" "left") $align_menu }}mr-auto ml-6{{ else if (in (slice "r" "right") $align_menu) }}ml-auto mr-6{{end}}">
+      {{ $currentPage := . }}
+      {{ range site.Menus.main }}
+      {{ $menuURL := .URL | absLangURL }}
+      {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+      {{ $active := eq $menuURL $pageURL }}
+      {{ if .HasChildren }}
+      <li class="nav-item nav-dropdown group relative">
+            <span
+              class="nav-link {{ range .Children }}
+                {{ $childURL := .URL | absLangURL }}
+                {{ $active := eq $childURL $pageURL }}
+                {{ if $active }}active{{ end }}
+              {{ end }} inline-flex items-center">
+              {{ .Name }}
+              <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20">
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </span>
+        <ul
+          class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+          {{ range .Children }}
+          {{ $childURL := .URL | absLangURL }}
+          {{ $active := eq $childURL $pageURL }}
+          {{ $url := "" }}
+          {{- if findRE `^#` .URL -}}
+            {{- if not $.IsHome -}}
+              {{- $url = site.Home.RelPermalink -}}
+            {{- end }}
+            {{- $url = .URL -}}
           {{- else -}}
-            {{- site.Title -}}
+            {{- $url = .URL | relLangURL -}}
           {{- end -}}
+          <li class="nav-dropdown-item">
+            <a
+              class="nav-dropdown-link {{ if $active }}active{{- end -}}"
+              {{ if findRE `^http` .URL }}
+              target="_blank" rel="noopener"
+              {{ end }}
+              href="{{$url}}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </li>
+      {{ else }}
+      {{ $url := "" }}
+      {{- if findRE `^#` .URL -}}
+        {{- if not $.IsHome -}}
+          {{- $url = site.Home.RelPermalink -}}
+        {{- end }}
+        {{- $url = .URL -}}
+        {{- else -}}
+        {{- $url = .URL | relLangURL -}}
+      {{- end -}}
+      <li class="nav-item">
+        <a
+          class="nav-link {{ if $active }}active{{- end -}}"
+          {{ if findRE `^http` .URL }}
+          target="_blank" rel="noopener"
+          {{ end }}
+          href="{{$url}}"
+        >{{ .Name }}</a
+        >
+      </li>
+      {{ end }}
+      {{ end }}
+      {{ if site.Params.header.navbar.button.enable }}
+      <li class="mt-4 inline-block lg:hidden">
+        <a
+          class=""
+          href="{{ site.Params.header.navbar.button.url | relLangURL }}">
+          {{ site.Params.header.navbar.button.text }}
         </a>
-      </div>
-      {{end}}
+      </li>
+      {{ end }}
+    </ul>
 
-      {{ if site.Menus.main }}
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="{{ i18n "toggle_navigation" }}">
-      <span><i class="fas fa-bars"></i></span>
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      {{/* Show site search? */}}
+      {{ $show_search := site.Params.header.navbar.show_search | default false }}
+      {{ with $show_search }}
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
       </button>
       {{ end }}
 
-      {{if $show_logo}}
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
-        {{- if $has_logo -}}
-          <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
-          {{with site.Params.header.image.width}}width="{{.}}"{{end}}
-          {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
-        {{- else -}}
-          {{- site.Title -}}
-        {{- end -}}
-        </a>
+      {{ $show_theme_chooser := site.Params.header.navbar.show_theme_chooser | default true }}
+      {{ if $show_theme_chooser }}
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
       </div>
-      {{end}}
+      {{ end }}
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      {{ $align_menu := site.Params.header.navbar.align | default "l" }}
-      <div class="navbar-collapse main-menu-item collapse {{ if eq $align_menu "c" }}justify-content-center{{ else if eq $align_menu "r" }}justify-content-end{{else}}justify-content-start{{ end }}" id="navbar-content">
+      {{ $show_translations := site.Params.header.navbar.show_translations | default true }}
+      {{ if .IsTranslated | and $show_translations }}
+      <div class="pl-1 mr-5 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        {{- partial "components/language-chooser.html" (dict "page" .) -}}
+      </div>
+      {{ end }}
 
-        <!-- Left Nav Bar -->
-        <ul class="navbar-nav d-md-inline-flex">
-          {{ range site.Menus.main }}
-
-          {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-              {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
-              <span class="caret"></span>
-            </a>
-            <div class="dropdown-menu">
-              {{ range .Children }}
-                <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
-                  {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
-                </a>
-              {{ end }}
-            </div>
-          </li>
-
-          {{ else }}
-
-          {{/* Set target for link. */}}
-          {{ $.Scratch.Set "target" "" }}
-          {{ if gt (len .URL) 4 }}
-            {{ if eq "http" (slicestr .URL 0 4) }}
-              {{ $.Scratch.Set "target" " target=\"_blank\" rel=\"noopener\"" }}
-            {{ end }}
-          {{ end }}
-
-          {{/* Get active page. */}}
-
-          {{ $is_link_in_current_path := false }}
-          {{ $is_widget_page := or $current_page.IsHome (eq $current_page.Type "widget_page") }}
-          {{ $is_same_page := false }}
-          {{ $hash := findRE "#(.+)" .URL }}
-
-          {{ if $current_page.IsHome | and (or (eq .URL "/") (eq .URL "")) }}
-            {{ $is_link_in_current_path = true }}
-          {{else}}
-            {{ if gt (len .URL) 1 }}{{/* Ignore root URL */}}
-              {{ $is_link_in_current_path = in $current_page.RelPermalink .URL }}
-              {{ $is_same_page = $is_link_in_current_path }}
-            {{end}}
-            {{ if gt (len $hash) 0 }}
-              {{ $hash = index $hash 0 }}
-              {{ $hash_removed := replace .URL $hash "" }}
-              {{ if eq (len $hash_removed) 0 }}
-                {{ $hash_removed = "/" }}{{/* Add robustness for `/#SECTION` or `#SECTION` in `menus.toml`. */}}
-              {{ end }}
-              {{ $is_same_page = eq (path.Dir $current_page.RelPermalink) (path.Dir ($hash_removed|relLangURL)) }}
-            {{ end }}
-          {{end}}
-
-          <li class="nav-item">
-            <a class="nav-link {{if and $highlight_active_link $is_link_in_current_path }} active{{end}}" href="{{.URL | relLangURL}}"{{ if and $is_widget_page $is_same_page }} data-target="{{$hash}}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
-              {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
-            </a>
-          </li>
-
-          {{ end }}
-          {{ end }}
-
-        {{ if site.Menus.main_right | and (eq $align_menu "l") }}
-        </ul>
-        <ul class="navbar-nav ml-md-auto">
-        {{ end }}
-
-          {{ range site.Menus.main_right }}
-
-          {{/* Set target for link. */}}
-          {{ $.Scratch.Set "target" "" }}
-          {{ if gt (len .URL) 4 }}
-          {{ if eq "http" (slicestr .URL 0 4) }}
-          {{ $.Scratch.Set "target" " target=\"_blank\" rel=\"noopener\"" }}
-          {{ end }}
-          {{ end }}
-
-          <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
-              {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
-            </a>
-          </li>
-
-          {{ end }}
-        </ul>
-      </div><!-- /.navbar-collapse -->
-
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-        {{/* Display any social links that the superuser chose to display in the header. */}}
-        {{ range where (where (where site.Pages "Section" "authors") ".Params.superuser" true) ".Params.social" "!=" nil }}
-          {{ range where .Params.social ".display.header" true }}
-            {{ $social_link := partial "functions/get_social_link" . }}
-            <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="{{ $social_link.link | safeURL }}"{{ with $social_link.tooltip }} data-toggle="tooltip" data-placement="bottom" title="{{.}}"{{ end }} {{ $social_link.target | safeHTMLAttr }} aria-label="{{ $social_link.aria_label }}">
-                <i class="{{ $social_link.icon_pack }} {{ $social_link.pack_prefix }}-{{ $social_link.icon }}" aria-hidden="true"></i>
-              </a>
-            </li>
-          {{ end }}
-        {{ end }}
-
-        {{/* Override: hide search icon if provider is Docsearch so we only show Docsearch once in the docs sidebar. */}}
-        {{ $show_search := site.Params.header.navbar.show_search | default true }}
-        {{ if and site.Params.features.search.provider $show_search | and (ne (lower site.Params.features.search.provider) "docsearch") }}
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="{{ i18n "search" }}"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        {{ end }}
-
-        {{ $show_day_night := site.Params.header.navbar.show_day_night | default true }}
-        {{ $has_day_night_themes := (and site.Params.appearance.theme_day site.Params.appearance.theme_night) }}
-        {{ if and $has_day_night_themes $show_day_night }}
-        <li class="nav-item dropdown theme-dropdown">
-          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="{{ i18n "theme_selector" | default "Display preferences" }}">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <span>{{ i18n "theme_light" | default "Light" }}</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>{{ i18n "theme_dark" | default "Dark" }}</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>{{ i18n "theme_auto" | default "Automatic" }}</span>
-            </a>
-          </div>
-        </li>
-        {{ end }}
-
-        {{ $show_translations := site.Params.header.navbar.show_translations | default true }}
-        {{ if .IsTranslated | and $show_translations }}
-        <li class="nav-item dropdown i18n-dropdown">
-          <a href="#" class="nav-link {{ if $show_current_language }}dropdown-toggle{{end}}" data-toggle="dropdown"
-             aria-haspopup="true" aria-label="{{ i18n "languages" | default "Languages" }}">
-            <i class="fas fa-globe mr-1" aria-hidden="true"></i>
-            {{- if $show_current_language -}}
-              <span class="d-none d-lg-inline">{{ index site.Data.i18n.languages .Lang }}</span>
-            {{- end -}}
-          </a>
-          <div class="dropdown-menu">
-            <div class="dropdown-item dropdown-item-active">
-              <span>{{ index site.Data.i18n.languages .Lang }}</span>
-            </div>
-            {{ range .Translations }}
-            <a class="dropdown-item" href="{{ .Permalink }}"{{ if $.IsHome }} data-target="{{ .RelPermalink }}"{{ end }}>
-              <span>{{ index site.Data.i18n.languages .Lang }}</span>
-            </a>
-            {{ end }}
-          </div>
-        </li>
-        {{ end }}
-
-      </ul>
-
-    </div><!-- /.container -->
+      <!-- CTA button -->
+      {{ if site.Params.header.navbar.button.enable }}
+      <a
+        href="{{ site.Params.header.navbar.button.url | relLangURL }}"
+        class="inline-block rounded border px-5 py-2 font-semibold transition
+        md:ml-4 px-4 py-1.5 text-sm
+        border-black  hover:bg-black dark:hover:bg-white dark:hover:text-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white
+        hidden lg:inline-block">
+        {{ site.Params.header.navbar.button.text }}
+      </a>
+      {{ end }}
+    </div>
   </nav>
 </header>
-{{end}}{{/* End show navbar. */}}
+
+{{ if $show_search }}
+<div id="search" class="hidden p-3"></div>
+{{ end }}
