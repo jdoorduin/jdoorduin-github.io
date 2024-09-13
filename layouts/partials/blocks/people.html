@@ -25,7 +25,7 @@
   {{ end }}
 
   {{ range $block.content.user_groups }}
-    {{ $query := where (where site.Pages "Section" "people") ".Params.user_groups" "intersect" (slice .) }}
+    {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
 
     {{/* Sort */}}
     {{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
@@ -44,7 +44,7 @@
       {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
       {{/* Get link to user's profile page. */}}
       {{ $link := "" }}
-      {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
+      {{ with site.GetPage (printf "/author/%s" (path.Base .File.Dir)) }}
         {{ $link = .RelPermalink }}
       {{ end }}
       <div class="col-12 col-sm-auto people-person">
