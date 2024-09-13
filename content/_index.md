@@ -99,5 +99,3 @@ sections:
     design:
       columns: '1'
 ---
-
-{{<tweets>}}
