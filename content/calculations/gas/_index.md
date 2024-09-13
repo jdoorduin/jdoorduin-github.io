@@ -5,10 +5,10 @@ date:
 ---
 Example of video/twitter feed:
 
-<br><br>
+<br>
 
 {{< youtube egJbUPhUK8Y >}}
 
-<br><br>
+<br>
 
 {{<tweets>}}
