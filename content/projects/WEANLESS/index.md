@@ -1,9 +1,9 @@
 ---
 title: WEANLESS
-summary: The WEANing with LEvoSimendan Study is evaluating the efficacy of levosimendan to reduce number of day weaning from mechanical ventilation.
+summary: The WEANing with LEvoSimendan Study is evaluating the efficacy of levosimendan to reduce the number of days weaning from mechanical ventilation.
 date: 2024-09-05
 authors:
-  - heunks
+  - admin
 tags:
 image:
   caption:
