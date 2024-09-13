@@ -79,7 +79,7 @@ sections:
         {{% callout note %}}
         Quickly discover relevant content by filtering [publications]({{< relref "/publication/" >}}).
         {{% /callout %}}
-      count: 5
+      count: 10
       filters:
         folders:
           - publication
